@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="palabras-fondo">
+  <span class="palabra" style="top:5%;left:10%;">Salmita te quiero</span>
+  <span class="palabra" style="top:10%;left:25%;">Salmita te quiero</span>
+  <span class="palabra" style="top:15%;left:30%;">Salmita te quiero</span>
+  <span class="palabra" style="top:20%;left:60%;">Salmita te quiero</span>
+  <span class="palabra" style="top:25%;left:50%;">Salmita te quiero</span>
+  <span class="palabra" style="top:30%;left:75%;">Salmita te quiero</span>
+  <span class="palabra" style="top:35%;left:70%;">Salmita te quiero</span>
+  <span class="palabra" style="top:40%;left:15%;">Salmita te quiero</span>
+  <span class="palabra" style="top:45%;left:20%;">Salmita te quiero</span>
+  <span class="palabra" style="top:50%;left:80%;">Salmita te quiero</span>
+  <span class="palabra" style="top:55%;left:40%;">Salmita te quiero</span>
+  <span class="palabra" style="top:60%;left:60%;">Salmita te quiero</span>
+  <span class="palabra" style="top:65%;left:60%;">Salmita te quiero</span>
+  <span class="palabra" style="top:70%;left:35%;">Salmita te quiero</span>
+  <span class="palabra" style="top:75%;left:80%;">Salmita te quiero</span>
+  <span class="palabra" style="top:80%;left:10%;">Salmita te quiero</span>
+  <span class="palabra" style="top:85%;left:15%;">Salmita te quiero</span>
+  <span class="palabra" style="top:90%;left:70%;">Salmita te quiero</span>
+  <span class="palabra" style="top:95%;left:55%;">Salmita te quiero</span>
+  <span class="palabra" style="top:98%;left:30%;">Salmita te quiero</span>
+  </div>
+  <div class="nube" style="position:relative;">
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  <div class="lluvia"></div>
+  </div>
+
+  <button id="boton-nube" style="position:fixed;bottom:40px;left:50%;transform:translateX(-50%);padding:10px 22px;border-radius:20px;border:none;color:#333;font-family:'Dancing Script',cursive;font-size:1.2rem;box-shadow:0 2px 6px rgba(0,0,0,0.15);cursor:pointer;z-index:10;"></button>
+  </div>
+
+</body>
+<script>
+  // Reproduce la canción tras la primera interacción del usuario
+  window.addEventListener('click', function() {
+    var audio = document.getElementById('musica');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+
+  // Botón en la nube para redirigir
+  document.getElementById('boton-nube').addEventListener('click', function(e) {
+    e.stopPropagation();
+    window.location.href = 'https://sundress4111-bit.github.io/S.E/salmita/index.html'; // Cambia la URL por la que desees
+  });
+</script>
+</html>
